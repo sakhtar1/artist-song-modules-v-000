@@ -4,8 +4,8 @@ require 'pry'
 class Artist
   attr_accessor :name
   attr_reader :songs
-  extend Memorable::Reset_all
-  include Memorable::Count
+  extend Memorable
+  
 
   @@artists = []
 
