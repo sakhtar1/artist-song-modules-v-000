@@ -4,8 +4,9 @@ require 'pry'
 class Artist
   attr_accessor :name
   attr_reader :songs
-  extend Memorable
-  Findable::ClassMethods
+
+  extend Memorable::ClassMethods
+  extend Findable::ClassMethods
 
 
   @@artists = []
